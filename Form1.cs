@@ -9,22 +9,22 @@ namespace maintance
         {
             InitializeComponent();
 
-            timer1.Interval = 1000; // секунда
+            timer1.Interval = 1000; // СЃРµРєСѓРЅРґР°
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
         }
-        // обработчик события Tick таймера
+        // РєР°Р¶РґС‹Р№ С‚РёРє С‚Р°Р№РјРµСЂР° (1 СЃРµРєСѓРЅРґР°) С‚Р°Р№РјРµСЂ
         void timer1_Tick(object sender, EventArgs e)
         {
-            oblivion += 1; // Колхозим счётчик
-            progressBar1.PerformStep(); // Шаг к прогресс бару
-            //str_oblivion = oblivion.ToString(); // Int в String (Для Хуйня)
-            //this.Text = str_oblivion; // Хуйня
+            oblivion += 1; // РўРёРїРѕ РѕС‚СЃС‡С‘С‚, Р»РѕР»
+            progressBar1.PerformStep(); // Р”РѕР±Р°РІР»СЏРµРј РїСЂРѕРіСЂРµСЃСЃР° Рє РѕР±СѓС‡РµРЅРёСЋ C#
+            //str_oblivion = oblivion.ToString(); // Int Гў String (Р”Р»СЏ С…СѓР№РЅРё)
+            //this.Text = str_oblivion; // С…СѓР№РЅСЏ
             if (oblivion == 10) {
             
               MessageBox.Show(
-                 "Хай! Ну тут должен был быть скрэмер, но денег нет(\nПоддержи , если не похуй (похуй) : https://www.donationalerts.com/r/ametero",
-                 "Адмен блэт",
+                 "РҐР°Р№! РќСѓ С‚СѓС‚ РґРѕР»Р¶РµРЅ Р±С‹Р» Р±С‹С‚СЊ СЃРєСЂСЌРјРµСЂ, РЅРѕ РґРµРЅРµРі РЅРµС‚(\nРџРѕРґРґРµСЂР¶Рё , РµСЃР»Рё РЅРµ РїРѕС…СѓР№ (РїРѕС…СѓР№) : https://www.donationalerts.com/r/ametero",
+                 "РђРґРјРµРЅ Р±Р»СЌС‚",
                  MessageBoxButtons.OK,
                  MessageBoxIcon.Information,
                  MessageBoxDefaultButton.Button1,
